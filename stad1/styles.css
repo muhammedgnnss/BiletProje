@@ -1,0 +1,41 @@
+body
+{
+display: flex;
+flex-direction:column-reverse;
+min-height: 100vh;
+justify-content: center;
+align-items:center ;
+
+
+}
+
+/* Örnek bir koltuk stili */
+area {
+    cursor: pointer;
+    outline: none; /* Tıklama alanının çerçevesini kaldırır */
+}
+
+/* Tıklanan koltuğun görsel geri bildirimini sağlamak için örnek bir stil */
+area:hover {
+    opacity: 0.7; /* Tıklanan alana tıklanabilirlik göstergesi olarak biraz saydamlık ekler */
+}
+
+/* İsteğe bağlı: Koltuk fiyatını göstereceğiniz yerin stilini belirleyebilirsiniz */
+#price-display {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 550px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
+    
+}
+#stadium-map {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%; /* Haritanın ekran boyutuna göre otomatik olarak yeniden boyutlandırılmasını sağlar */
+}
+
